@@ -5,6 +5,17 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+// Mayed 
+
+app.post('/makeastudent', (req, res) => {
+  let data = {
+    name: " Kamruzzaman Mayed",
+    id: "WEB-3126",
+    email: "zamanmayed@gmail.com"
+  }
+  console.log(data);
+
+})
 
 // anik
 app.get('/user', async (req, res) => {
